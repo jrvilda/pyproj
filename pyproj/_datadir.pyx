@@ -163,7 +163,7 @@ cdef void pyproj_context_initialize(
     """
     Setup the context for pyproj
     """
-    proj_log_func(context, NULL, pyproj_log_function)
+    # proj_log_func(context, NULL, pyproj_log_function)
     proj_context_use_proj4_init_rules(context, 1)
     if autoclose_database:
         proj_context_set_autoclose_database(context, 1)
